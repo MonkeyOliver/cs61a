@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+*.ok_history
+*.ok_storage
