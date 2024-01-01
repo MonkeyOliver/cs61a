@@ -8,6 +8,4 @@ Lab09 Q4
 
 Project04 Problem EC中需要额外更改的其他地方用"PROBLEM EC"进行注释
 
-HW09 Q2
-
 HW09 Q3 测试样例貌似有误，(a, b, c) -> ('a, 'b, 'c)

@@ -1,5 +1,5 @@
 (define-macro (when condition exprs)
-  `(if ,condition ,(begin exprs) 'okay))
+  `(if ,condition (begin ,@exprs) 'okay)) ;Hint: Use unquote-splicing '@'
 
 (define-macro (switch expr cases)
   (cons 'cond
