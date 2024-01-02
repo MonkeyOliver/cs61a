@@ -1,12 +1,12 @@
 (define-macro
  (if-macro condition if-true if-false)
- 'YOUR-CODE-HERE)
+ `(if ,condition ,if-true ,if-false))
 
 (define-macro (or-macro expr1 expr2)
-  `(let ((v1 ____________))
-     (if _____
-         _____
-         _____)))
+  `(let ((v1 ,expr1))
+     (if v1
+         v1
+         ,expr2)))
 
 (define (replicate x n) 'YOUR-CODE-HERE)
 
