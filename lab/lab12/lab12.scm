@@ -14,7 +14,7 @@
 
 (define
  (list-of map-expr for var in lst if filter-expr)
- 'YOUR-CODE-HERE)
+ `(map (lambda (,var) ,map-expr) (filter (lambda (,var) ,filter-expr) ,lst)))
 
 (define-macro (list-of-macro map-expr
                              for
@@ -23,4 +23,4 @@
                              lst
                              if
                              filter-expr)
-  'YOUR-CODE-HERE)
+  `(map (lambda (,var) ,map-expr) (filter (lambda (,var) ,filter-expr) ,lst)))
